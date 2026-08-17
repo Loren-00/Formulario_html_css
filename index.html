@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="contenedor">
+
+        <h1>Formulario de registro</h1>
+        <p class="Descripción">
+            Complete los siguientes campos donde debe de anexar sus datos para realizar su registro. 
+        </p>
+        <br>
+
+        <form action="#" method="post">
+
+            <div class="campo">
+                <label for="nombre">Nombre:</label>
+                <input 
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Ingrese su nombre"
+                    required
+                >
+            </div>
+
+            <div class="campo">
+                <label for="apellido">Apellido:</label>
+                <input 
+                    type="text"
+                    id="apellido"
+                    name="apellido"
+                    placeholder="Ingrese su apellido"
+                    required
+                >
+            </div>
+
+            <div class="campo">
+                <label for="tipo_documento">Tipo de documento:</label>
+                <select name="tipo_documento" id="tipo_documento" required>
+                    <option value="">Selecione una opción</option>
+                    <option value="ti">Tarjeta de identidad</option>
+                    <option value="cc">Cédula de ciudadanía</option>
+                    <option value="ce">Cédula de extranjería</option>
+                    <option value="pasaporte">Pasaporte</option>
+                </select>
+            </div>    
+
+            <div class="campo">
+                <label for="dni">DNI:</label>
+                <input 
+                    type="text"
+                    id="dni"
+                    name="dni"
+                    placeholder="Ingrese su número de documento"
+                    required
+                    >
+            </div>
+
+            <div class="campo">
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input 
+                    type="date"
+                    id="fecha"
+                    name="fecha"
+                    required
+                    >
+            </div>
+
+            <div class="campo">
+                <label for="telefono">Número de télefono:</label>
+                <input 
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    placeholder="Ingrese su número de télefono"
+                    required
+                    >
+            </div>
+
+            <div class="campo">
+                <label for="email">Email:</label>
+                <input 
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="ejemplo@correo.com"
+                    required
+                    >
+            </div>
+
+            <div class="campo">
+                <label for="pais">País de domicilio:</label>
+                <select name="pais" id="pais">
+                    <option value="">Seleccione su país</option>
+                    <option value="colombia">Colombia</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="brasil">Brasil</option>
+                    <option value="mexico">México</option>
+                    <option value="españa">España</option>
+                    <option value="chile">Chile</option>
+                    <option value="ecuador">Ecuador</option>
+                    <option value="peru">Peú</option>
+                    <option value="venezuela">Venezuela</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="ciudad">Ciudad de domicilio:</label>
+                <input 
+                    type="text"
+                    id="ciudad"
+                    name="ciudad"
+                    placeholder="Ingrese su ciudad"
+                    required
+                    >
+            </div>
+
+            <div class="terminos">
+                <input 
+                    type="checkbox"
+                    id="datos"
+                    name="datos"
+                    required
+                    >
+                
+                <label for="datos">
+                    Acepto el tratamiento de datos personales.
+                </label>
+            </div>
+
+            <button type="submit">
+                Enviar datos
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
